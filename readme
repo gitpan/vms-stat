@@ -1,10 +1,12 @@
-VMS/Stat version 0.02
+VMS/Stat version 0.03
 =====================
 
-VMS::Stat provides perl access to the HP C extensions to the mkdir()
-call in the C run time library (C RTL).  In particular, optional extra 
-arguments for the owner UIC, maximum RMS version limit, and 
-relative volume number may be given in calls to VMS::Stat::vmsmkdir().
+VMS::Stat provides perl access to:
+* many portions of the File Access Block for an RMS file (read only) via VMS::Stat::get_fab().
+* the HP C extensions to the mkdir() call in the C run time library (C RTL).
+  ( In particular, optional extra arguments for the owner UIC, 
+    maximum RMS version limit, and relative volume number may be given in 
+    calls to VMS::Stat::vmsmkdir(). )
 
 Other documentaton can be found by running:
 
@@ -62,6 +64,7 @@ it under the same terms as Perl itself.
 
 HISTORY
 
+17-MAY-2004 VMS/Stat version 0.03 - Added initial (simple) implementation of get_fab().
 28-APR-2004 VMS/Stat version 0.02 - second release to CPAN with updated 
                                     README.;1 that had been accidentally left out of the 0.01 release
 28-APR-2004 VMS/Stat version 0.01 - first release to CPAN

@@ -5,3 +5,5 @@ README
 Stat.pm
 Stat.xs
 t/1.t
+t/2.t
+META.yml                                 Module meta-data (added by MakeMaker)
